@@ -7,6 +7,7 @@ Jag skapade sen en Tillbaka-knapp för SecondActivity genom att definiera MainAc
 
 
 Sedan skapade jag en OnclickListener som skickar användaren till SecondActivity när de trycker på knappen i MainActivity.
+
 Kodexempel 1
 ```
         Button MainButton = findViewById(R.id.MainButton);
@@ -20,7 +21,9 @@ Kodexempel 1
     }
 ```
 Jag skapade sen en PreferenceRefEditor i SecondActivity som jag definierade att när användaren trycker
-på knappen så ska den ta datan som skrivits till min EditText och spara den i min SharedPreference
+på knappen så ska den ta datan som skrivits till min EditText och spara den i min SharedPreference.
+
+Kodexempel 2
 ```
     SharedPreferences myPreferenceRef;
     SharedPreferences.Editor myPreferenceEditor;
@@ -51,6 +54,8 @@ på knappen så ska den ta datan som skrivits till min EditText och spara den i 
     }
 ```
 Jag skapade också sedan en PreferenceRef i MainActivity som hämtar innehållet i SharedPreference och skriver det till TextViewen.
+
+Kodexempel 3
 ```
     @Override
     protected void onResume() {
